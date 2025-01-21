@@ -1,0 +1,141 @@
+cc fundamentals
+os
+network security
+vulnerability management
+incidence response
+
+CIA triad = 	Confidentiality(prevents unauthorized access to information, tools are 					encryption and access control, example is to encrypt emails so that 			only the intended recipient can read it),
+		Integrity(ensure that information is unchanged unless authorized, tools used are checksum, digital signature, hashing),
+		Availability().
+
+confidentiality:
+-authentication, who are you (access control)
+-authorization, what are you allowed to do (encryption)
+
+Integrity:
+- make sure data is true to itself. (digital signature)
+
+Availability:
+-resources available only to authorized users 
+
+threat types = malware, phishing, ransomware, insider threats, social engineering
+
+key security controls:
+-administrative: policies, employee training
+-physical: locks, badges, surveillance
+-technical: firewalls, encryption
+
+
+TCP/IP: Transmission Control Protocol/Internet Protocol
+UDP: User Datagram Protocol
+
+osi model has 7 layers
+tcp/ip model has 4 layers
+
+OSI model layers:
+7. Application layer
+6. Presentation layer
+5. Session layer
+4. Transport layer
+3. Network layer
+2. Data Link layer
+1. Physical layer
+
+TCP/IP model layers:
+4. Application layer
+3. Transport layer
+2. Internet layer
+1. Link layer/Network Access layer
+
+
+#Explaining OSI layers:
+1.physical layer;
+- no address type
+- devices: Cables, Network Cards, Hubs
+- Data Type: Bits
+
+2.data link layer;
+-Address type: MAC Address
+-Devices: Switches /Bridges
+-Data type: Ethernet Frame (ethernet header, IP header, TCP header, data payload, ethernet trailer)
+
+3.network layer;
+-address type: IP Address
+-Devices: Routers, Firewalls
+-Data Type: Packet (IP header, TCP header, data payload)
+
+4.transport layer;
+-address type: Ports
+-Devices: Routers,Firewalls
+-data type: segments (TCP header, data payload)
+
+5.session layer;
+-managing sessions(session start and closed out, authentication and authorization)
+
+6.presentation layer;
+-Data translation, formatting, encryption, compression
+
+7.application layer;
+- has to do with how data shows up in UI that we interact with and how we input data
+
+what is a port?
+a port is an entry point -  like a doorway that can open and close
+
+what is a protocol?
+an established set of rules for network communications to work. each protocol has its own purpose.
+
+some protocols---
+IP(Internet Protocol)- about getting the address the data should go to.
+TCP(Transmission Control Protocol)- enables application programs and computer devices to exchange messages.
+UDP(User Datagram Protocol)- enables comms with low latency and loss tolerance. No acknowledgement needed. Used for treaming like netflix.
+
+
+
+
+
+MSRA Microsoft Remote Assistance - get access to a remote user's desktop
+no firewall or port forwarding required
+user makes a request-sends an invit
+techician connects-uses the password in the request
+replaced by Quick Assist
+
+find text in file?
+linux command -grep- command to find text
+windows command -wingrep
+manual(view docs for command) eg. man grep
+grep something(text in file) system.log(file name)
+
+copy file?
+cp(to copy file)
+cp system.log(file to copy from) system.log.backup(file to paste to)
+ls(list files specified) -la system.log
+
+
+authenticate to wireless network using windows credentials?
+
+cyber security is the protection of information in a system against malicious attacks
+NIST national Institution of standards technology
+
+no way to completely eradicate risk, only mitigate.
+
+cyber security focus area: Network security
+
+principles
+defense in depth - not relying on 1 defense mechanism (avoid single point of failure)
+least privilege - only certain authorizations
+seperation of duties - no single point of control or
+security by design - security should not be an afterthought. implement from design to completion
+Keep It Simple Stupid - dont make it harder than necessary. secure but simple as possible.
+
+Never do this!! **security by obscurity**
+
+interview questions
+What is on your home network?
+-be technical.
+Difference between threat, vulnerability, risk?
+-vulnerability is a weakness in the system
+-threat is a negative event
+-risk is likelyhood of vulnerability being exploited by the threat
+How would you go about securing a server? (open ended question, knowledge check)
+-check CIS benchmarks for own personal server, guidlelines controls depending on what the server is used for.
+Why is DNS monitoring important?
