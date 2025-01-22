@@ -62,6 +62,76 @@ a known or trusted source. In doing so, the attacker is able to engage
 with the target and access their systems or devices with the ultimate goal
 of stealing information, extorting money or installing malware.
 
+Indentity-based attacks - extremely hard to detect. Once a valid user's credentials
+have been compromised and the attacker is pretending to be them, it is difficult
+to pick up any red flags.
+
+Code injection attacks - injecting malicious code into a vulnerable computer or
+network to change its actions. (SQL injections, XSS)
+
+Supply chain attacks - an attack that targets third party vendor who offers 
+services or software that is vital to the supply chain. vulnerable because modern
+software is not written from scratch, but involves many off-the-shelf components
+like APIs, open source code etc.
+
+Social engineering attacks - a technique where attackers use psychological tactics
+to manipulate people into taking desired action.
+
+Insider Threats - are internal actors such as current or former employees that pose
+danger to an organisation because they have direct access to the company network,
+sensitive data and IP, as well as business processes, policies etc.
+
+DNS(domain name system) tunneling - a type of attack that leverages DNS queries and
+and responses to bypass traditional security measures and transmit data and code 
+within the network. Once infected, the hacker can freely engage in 
+command-and-control activities. This tunnel gives the hacker a route to 
+unleash malware and/or extract data,IP or other sensitive information by encoding it
+bit by bit in a series of DNS responses. ready simple to deploy, since 
+tunneling toolkits are readily accessible online.
+
+IoT-based attacks - any attack that targets an IoT device or network. 
+Once compromised, the hacker can assume control of the device, steal data,
+or join a group of infected devices to create a botnet, which can then launch a
+DDoS attack.
+
+AI-powered attacks - as AI and ML technology improves, the number of use cases has
+also increased. Just as we can leverage AI and ML to protect, attackers can us it
+to attack.
+------------------------------------------------------------------------------------
+
+VULNERABILITIES
+Vulnerablilities are weaknesses that attackers exploit to gain unauthorised access.
+
+Types of vulnerabilities
+
+Misconfigurations - the largest threat to both cloud and app security.
+Many security tools require manual configuration. This process is prone to 
+human error and takes alot of time to manage and update.
+
+Unsecured APIs(Application Programming interfaces) - one of the few 
+organizational assets with a public IP address. If not properly secured, the can
+become easy targets for attackers to breach. Also prone to human error
+
+Outdated or unpatched software - Software vendor periodically release 
+application updates to add features or patch security vulnerabilities.
+Unpatched and outdated software make it easier for advanced attackers to target.
+network and endpoints are also vulnerable.
+
+Zero-day vulnerabilities - refers to a security flaw that has been discovered by a 
+threat actor but is unknown to the enterprise and the software vendor. The term 
+"Zero-day" is used because the software vendor had "0" days to work on a patch or
+update to fix the issue, meanwhile it is a known vulnerability to the attacker.
+
+Weak or Stolen User Credentials - Many users fail to create unique and 
+strong passwords for each of their accounts. Weak credentials are
+most often exploited in brute force attacks when a threat actor
+tries to gain unauthorized access to data and systems by trying many combinations
+of usernames and passwords.
+
+Access Control - Companies often grant employees more access and permissions than 
+needed to perform their job functions. This increase risk of identity-based threats.
+
+
 -------------------------------------------------------------------------------------
 key security controls:
 -administrative: policies, employee training
