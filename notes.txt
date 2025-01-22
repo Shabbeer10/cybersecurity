@@ -3,28 +3,71 @@ os
 network security
 vulnerability management
 incidence response
+-------------------------------------------------------------------------
+Cybersecurity is the practice of defending computers, servers, mobile devices, 
+networks, and data from malicious attacks. It involves tools, processes and 
+best practices to ensure a system's security.
 
-CIA triad = 	Confidentiality(prevents unauthorized access to information, tools are 					encryption and access control, example is to encrypt emails so that 			only the intended recipient can read it),
-		Integrity(ensure that information is unchanged unless authorized, tools used are checksum, digital signature, hashing),
-		Availability().
+Importance?
+-Protects sensitive data (personal, financial, healthcare)
+-Ensures business continuity and minimizes downtime.
+-Safeguards against financial and reputational damage.
+------------------------------------------------------------------------------
+The CIA Triad is a foundational model in CS, consisting of three principles:
 
-confidentiality:
+Confidentiality - Ensures that information is accessible only to those authorised
+to see it. 
+Example is encrypting files to prevent unauthorized access.
+Tools used are AES(Advanced Encryption Standard), TLS(Transport Layer Security)
 -authentication, who are you (access control)
 -authorization, what are you allowed to do (encryption)
 
-Integrity:
+Integrity - Ensure information is accurate and has not been tampered with.
+Example is to use hashing algorithms to detect file changes.
+Tools are Checksums and Digital Signatures.
 - make sure data is true to itself. (digital signature)
 
-Availability:
+Availability - Ensure Authorized users can access information when needed.
+Example is to implement backups and redundancy(creating duplicates of
+components or systems to ensure ALTERNATIVE RESOURCES are always available).
+Tools are RAID(Redundant Array of Independent Disks), load balancers.
 -resources available only to authorized users 
+------------------------------------------------------------------------------------
+THREATS
+A threat is a potential cause of harm to systems or data.
 
-threat types = malware, phishing, ransomware, insider threats, social engineering
+Types of Threats:
+External Threats - eg.Hackers, malware, ransomware, phishing.
+Internal Threats - eg.Employees misusing access, accidental data leaks.
+Physical Threats - eg.Theft of devices, damage to hardware.
 
+Malware - "Malicious software" is any program or code that is created with
+the intent to do harm to a computer network or server. Malware is the most
+common cyber attack, because it encompasses many subsets that leverage 
+software in a malicious way.(ransomeware, trojan, worms)
+
+Denial-of-service (DoS) attacks - a targeted attack that floods a network 
+with false requests in order to disrupt business operations. on these attacked
+systems, users are unable to access websites or emails or online accounts etc.
+This costs the organisation time, money and other resources.
+#(Distributed)DDoS attacks are launched from multiple systems. Much more difficult
+to catch.
+
+Phishing - a type of attack that uses email, sms, phone, social media and 
+social engineering techniques to entice a victim to share sensitive information
+such as passwords or account numbers, or trick them into downloading malware.
+
+Spoofing - a technique through which attacker disguise themselves as
+a known or trusted source. In doing so, the attacker is able to engage 
+with the target and access their systems or devices with the ultimate goal
+of stealing information, extorting money or installing malware.
+
+-------------------------------------------------------------------------------------
 key security controls:
 -administrative: policies, employee training
 -physical: locks, badges, surveillance
 -technical: firewalls, encryption
-
+-------------------------------------------------------------------------------------
 
 TCP/IP: Transmission Control Protocol/Internet Protocol
 UDP: User Datagram Protocol
