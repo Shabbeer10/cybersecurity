@@ -131,6 +131,38 @@ of usernames and passwords.
 Access Control - Companies often grant employees more access and permissions than 
 needed to perform their job functions. This increase risk of identity-based threats.
 
+-------------------------------------------------------------------------------------
+
+RISK MANAGEMENT
+
+Risk management involves identifying, assessing and mitigating risks to minimize
+harm.
+
+Steps in Risk Management
+
+Identify risks: What could go wrong? (eg. data breach, system failure).
+Assess risks: Determine the impact and likelihood of each risk.
+Mitigate risks: Apply controls to reduce risks.
+
+Risk Example
+A stolen laptop could lead to data loss.
+Mitigation: Encrypt the hardrive and use strong passwords.
+
+-------------------------------------------------------------------------------------
+
+Cybersecurity Domains
+
+Cybersecurity covers multiple domains:
+
+Network security - Securing networks from intrusions.
+Application security - Ensuring software is free from VULNERABILITIES
+Information security - Protectinf sensitive data.
+Incident Response -  Detecting and Responding to breaches
+Operational Security - Managing access controls and system policies.
+
+-------------------------------------------------------------------------------------
+
+
 
 -------------------------------------------------------------------------------------
 key security controls:
