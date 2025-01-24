@@ -162,6 +162,71 @@ Operational Security - Managing access controls and system policies.
 
 -------------------------------------------------------------------------------------
 
+Reasearch on WannaCry Ransomware
+
+-WannaCry is a ransomware worm that spread rapidly across a number of
+computer networks in May 2017.
+-Exploited Windows a VULNERABILITY 
+-The vulnerability was first discovered by the US National Security Agency
+who then developed the code (EternalBlue)to exploit it, instead of notifying infosec. 
+It was then stolen by a hacking group called The Shadow Brokers, who then leaked 
+the info.
+-After infecting a Windows computer, encrypts files on the harddrive to block
+access, then demand ransom in bitcoin to decrypt.
+-Struck a large number of important and High-profile 
+systems.(Britain's National Health Service)
+- Mostly affected Windows 7 systems and unpatched higher versions.
+-Wannacry only proceeds with its ransomware mission if it FAILS to connect to 
+a domain, else it shuts itself down. This killswitch makes it access
+a hardcoded gibberish URL before it begins the encryption process.
+
+
+What caused the breach (vulnerabilities)?
+-It spread via a flaw in the Microsoft Windows implementation of the
+Server Message Block (SMB) protocol.
+
+what were the consequences?
+-many systems were infected around the world, encrypting data on windows devices.
+users and organisations lose access to valuable data and lose time, money and 
+resources.
+
+How could it have been prevented?
+Sharing knowledge of vulnerability sooner would have helped to prevent the virus
+being spread in the first place.
+
+How can it be detected?
+keep an eye on system logs and network traffic.
+
+After doing some very light research on the WannaCry ransomware of 2017, which infected
+Windows systems all over the world, it's easy to see how important properly securing
+systems and creating awareness is.
+
+It seems that the main reason the virus went so far was because the US government
+did not notify anyone about the vulnerability. Instead, when 
+they discovered it, the created a way to exploit the vulnerability, 
+and that knowledge got leaked. Using the vulnerability, attackers encrypted data and
+held it for ransome. This happened to very high-profile organisations like 
+Nissan and FedEx.
+
+The following is some personal takeaway note, if i missed or misunderstood anything, 
+please let me know.
+
+Governments and organizations should share knowledge of vulnerabilities quickly to
+prevent exploitation.
+
+Keeping systems updated and applying security patches promptly can prevent
+exploits of known vulnerabilities.
+
+Regular backups can ensure data recovery without having to eg. pay a ransom
+
+Isolating critical systems can limit spread of malware
+
+Monitoring and detection systems can help mitigate attacks early.
+
+Training employees to recognise phishing and ransomware tactics to reduce human
+vulnerabilities.
+
+
 
 
 -------------------------------------------------------------------------------------
