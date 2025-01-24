@@ -204,9 +204,8 @@ systems and creating awareness is.
 It seems that the main reason the virus went so far was because the US government
 did not notify anyone about the vulnerability. Instead, when 
 they discovered it, the created a way to exploit the vulnerability, 
-and that knowledge got leaked. Using the vulnerability, attackers encrypted data and
-held it for ransome. This happened to very high-profile organisations like 
-Nissan and FedEx.
+and that knowledge got leaked. Using the vulnerability, attackers developed WannaCry. 
+This happened to very high-profile organisations like Nissan and FedEx.
 
 The following is some personal takeaway note, if i missed or misunderstood anything, 
 please let me know.
