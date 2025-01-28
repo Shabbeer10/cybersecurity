@@ -207,7 +207,7 @@ they discovered it, the created a way to exploit the vulnerability,
 and that knowledge got leaked. Using the vulnerability, attackers developed WannaCry. 
 This happened to very high-profile organisations like Nissan and FedEx.
 
-The following is some personal takeaway note, if i missed or misunderstood anything, 
+The following is some personal notes, if I missed or misunderstood anything, 
 please let me know.
 
 Governments and organizations should share knowledge of vulnerabilities quickly to
@@ -216,16 +216,41 @@ prevent exploitation.
 Keeping systems updated and applying security patches promptly can prevent
 exploits of known vulnerabilities.
 
-Regular backups can ensure data recovery without having to eg. pay a ransom
+Regular backups can ensure data recovery without having to eg. pay a ransom.
 
-Isolating critical systems can limit spread of malware
+Isolating critical systems can limit spread of malware.
 
 Monitoring and detection systems can help mitigate attacks early.
 
 Training employees to recognise phishing and ransomware tactics to reduce human
 vulnerabilities.
+------------------------------------------------------------------------------------
+ENCRYPTION
 
+what happens when someone steals an encrypted file? would they be able to read it 
+without the key/password? NO, when encrypted, data becomes unreadable text, even when
+stolen.
 
+how does adding salt improve the encryption process? Salt makes it even more difficult 
+to find the password for even one account because it creates a huge amount of possible 
+combinations that will drain time and resource in the attempt to decypher.
+
+AES-256 encyrption is considered more secure bacuse it has a longer bit length(256)
+which require more computational power than other encryptions but is expected to
+be undecypherable even to a quantum computer.
+
+Symmetric encryption uses the same key/password for encryption AND decryption. This
+method is straightforward and fast, making it best for encrypting large amounts 
+of data. Drawback is trying to securely share keys between parties. 
+If the key is intercepted, the security of the encrypted data is compromised.
+
+Asymmetric encryption uses 2 keys. one public key and one private key. The private 
+key is never shared. Drawback is that is is slower than symmetric encryption so it is
+better used on small amounts of data.
+
+If used together, however, asymmetric encryption can be used to securely exchange
+symmetric keys. So, symmetric to encrypt large amounts of data, then asymmetric to
+encrypt the symmetric key of that data.
 
 
 -------------------------------------------------------------------------------------
@@ -266,7 +291,8 @@ TCP/IP model layers:
 2.data link layer;
 -Address type: MAC Address
 -Devices: Switches /Bridges
--Data type: Ethernet Frame (ethernet header, IP header, TCP header, data payload, ethernet trailer)
+-Data type: Ethernet Frame (ethernet header, IP header, TCP header, data payload, 
+ethernet trailer)
 
 3.network layer;
 -address type: IP Address
@@ -291,12 +317,15 @@ what is a port?
 a port is an entry point -  like a doorway that can open and close
 
 what is a protocol?
-an established set of rules for network communications to work. each protocol has its own purpose.
+an established set of rules for network communications to work. each protocol has its 
+own purpose.
 
 some protocols---
 IP(Internet Protocol)- about getting the address the data should go to.
-TCP(Transmission Control Protocol)- enables application programs and computer devices to exchange messages.
-UDP(User Datagram Protocol)- enables comms with low latency and loss tolerance. No acknowledgement needed. Used for treaming like netflix.
+TCP(Transmission Control Protocol)- enables application programs and computer devices 
+to exchange messages.
+UDP(User Datagram Protocol)- enables comms with low latency and loss tolerance. 
+No acknowledgement needed. Used for treaming like netflix.
 
 
 
@@ -333,8 +362,10 @@ principles
 defense in depth - not relying on 1 defense mechanism (avoid single point of failure)
 least privilege - only certain authorizations
 seperation of duties - no single point of control or
-security by design - security should not be an afterthought. implement from design to completion
-Keep It Simple Stupid - dont make it harder than necessary. secure but simple as possible.
+security by design - security should not be an afterthought. implement from design to 
+completion
+Keep It Simple Stupid - dont make it harder than necessary. secure but simple as 
+possible.
 
 Never do this!! **security by obscurity**
 
@@ -346,5 +377,6 @@ Difference between threat, vulnerability, risk?
 -threat is a negative event
 -risk is likelyhood of vulnerability being exploited by the threat
 How would you go about securing a server? (open ended question, knowledge check)
--check CIS benchmarks for own personal server, guidlelines controls depending on what the server is used for.
+-check CIS benchmarks for own personal server, guidlelines controls depending on what 
+the server is used for.
 Why is DNS monitoring important?
