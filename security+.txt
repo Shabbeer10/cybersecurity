@@ -1,0 +1,34 @@
+Types of Security Controls
+
+Technical Security Controls
+- Controls implemented using systems
+- Operating systems controls
+- Firewalls, Anti virus
+
+Managerial Security controls
+-Administrative controls associated with security design Administrative
+implementation
+-Security policies, standard operating procedures.
+
+Operational Security Controls
+- controls implemented by people instead of systems
+-security guards, awareness programs
+
+Physical Security controls
+-limit physical access
+-guard shack
+-fences, locks
+-badge readers
+
+Control Types:
+Preventive - Blocks access to a resource.
+Deterrent - Discourage an intrusion attempt.
+Detective - Identify and log intrusion attempt.
+Corrective - Apply a control after an event has been detected
+Compensating - May be temporary, when existing controls 
+    arent sufficient.
+Directive - Direct a subject towards security compliance
+
+
+Fundamentals of Security - CIA Triad
+
