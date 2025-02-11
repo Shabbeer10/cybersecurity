@@ -7,12 +7,9 @@ Welcome to the Cybersecurity Learning Resources repository! This repository is d
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
 - [Resources](#resources)
-  - [Books](#books)
   - [Online Courses](#online-courses)
   - [Websites](#websites)
   - [Tools](#tools)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -28,23 +25,16 @@ To get started with cybersecurity, you can follow these steps:
 
 ## Resources
 
-### Books
-
-- "The Web Application Hacker's Handbook" by Dafydd Stuttard and Marcus Pinto
-- "Metasploit: The Penetration Tester's Guide" by David Kennedy, Jim O'Gorman, Devon Kearns, and Mati Aharoni
-- "Hacking: The Art of Exploitation" by Jon Erickson
-
 ### Online Courses
 
 - [Cybrary](https://www.cybrary.it/)
-- [Coursera Cybersecurity Courses](https://www.coursera.org/browse/information-technology/cybersecurity)
-- [Udemy Cybersecurity Courses](https://www.udemy.com/topic/cyber-security/)
 
 ### Websites
 
 - [OWASP](https://owasp.org/)
 - [Kali Linux Documentation](https://www.kali.org/docs/)
 - [Hack The Box](https://www.hackthebox.eu/)
+- [TryHackMe](https://tryhackme.com/)
 
 ### Tools
 
@@ -52,13 +42,5 @@ To get started with cybersecurity, you can follow these steps:
 - **Nmap**: A network scanning tool.
 - **Metasploit**: A penetration testing framework.
 - **Burp Suite**: A web vulnerability scanner.
-
-## Contributing
-
-We welcome contributions from the community! If you have any resources, tools, or tutorials that you would like to add, please feel free to submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 Happy learning and stay secure!
