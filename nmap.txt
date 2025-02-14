@@ -1,0 +1,70 @@
+14/02/2025
+Capaciti Desktop (PC034_Mainfloor)
+///REGULAR PORT SCAN:(nmap -p- 172.24.7.100)
+
+Host is up (0.00069s latency).
+Not shown: 65519 closed tcp ports (reset)
+PORT      STATE    SERVICE
+135/tcp   open     msrpc
+137/tcp   filtered netbios-ns
+139/tcp   open     netbios-ssn
+445/tcp   open     microsoft-ds
+3306/tcp  open     mysql
+5040/tcp  open     unknown
+5432/tcp  open     postgresql
+7680/tcp  open     pando-pub
+33060/tcp open     mysqlx
+49664/tcp open     unknown
+49665/tcp open     unknown
+49666/tcp open     unknown
+49667/tcp open     unknown
+49668/tcp open     unknown
+49669/tcp open     unknown
+49684/tcp open     unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 6.12 seconds
+
+NOTES
+# All clear (Unknown open ports on common for unrecognised)
+------------------------------------------------------------------------------------
+///version detection on services (nmap -sV 172.24.7.100)
+Host is up (0.0011s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3306/tcp open  mysql         MySQL 8.0.41
+5432/tcp open  postgresql    PostgreSQL DB 9.6.0 or later
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+NOTES
+# All clear
+------------------------------------------------------------------------------------
+///Vulnerability scan
+Pre-scan script results:
+| broadcast-avahi-dos:
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 127.24.7.100
+Host is up (0.00030s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+5432/tcp open  postgresql
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Nmap done: 1 IP address (1 host up) scanned in 59.80 seconds
+
+NOTES
+# samba-vuln-cve-2012-1182 -- Samba Might not be running on this system/
+    Unsupported version/blocked by firewall or nmap probes.
+# smb-vuln-ms10-061 -- 
