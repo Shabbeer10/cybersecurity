@@ -1,70 +1,43 @@
-14/02/2025
-Capaciti Desktop (PC034_Mainfloor)
-///REGULAR PORT SCAN:(nmap -p- 172.24.7.100)
+Step 1: Regular Port Scan (All Ports)
+Check for open ports on a target to detect newly opened or unexpected ports.
 
-Host is up (0.00069s latency).
-Not shown: 65519 closed tcp ports (reset)
-PORT      STATE    SERVICE
-135/tcp   open     msrpc
-137/tcp   filtered netbios-ns
-139/tcp   open     netbios-ssn
-445/tcp   open     microsoft-ds
-3306/tcp  open     mysql
-5040/tcp  open     unknown
-5432/tcp  open     postgresql
-7680/tcp  open     pando-pub
-33060/tcp open     mysqlx
-49664/tcp open     unknown
-49665/tcp open     unknown
-49666/tcp open     unknown
-49667/tcp open     unknown
-49668/tcp open     unknown
-49669/tcp open     unknown
-49684/tcp open     unknown
+nmap -p- 192.168.1.1
 
-Nmap done: 1 IP address (1 host up) scanned in 6.12 seconds
+-p-: Scans all 65,535 TCP ports.
+This will help detect any services running on non-standard ports.
 
-NOTES
-# All clear (Unknown open ports on common for unrecognised)
-------------------------------------------------------------------------------------
-///version detection on services (nmap -sV 172.24.7.100)
-Host is up (0.0011s latency).
-Not shown: 995 closed tcp ports (reset)
-PORT     STATE SERVICE       VERSION
-135/tcp  open  msrpc         Microsoft Windows RPC
-139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
-445/tcp  open  microsoft-ds?
-3306/tcp open  mysql         MySQL 8.0.41
-5432/tcp open  postgresql    PostgreSQL DB 9.6.0 or later
-Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+Step 2: Service and Version Detection
+Identify the services running on open ports and their versions to check for vulnerabilities.
 
-NOTES
-# All clear
-------------------------------------------------------------------------------------
-///Vulnerability scan
-Pre-scan script results:
-| broadcast-avahi-dos:
-|   Discovered hosts:
-|     224.0.0.251
-|   After NULL UDP avahi packet DoS (CVE-2011-1002).
-|_  Hosts are all up (not vulnerable).
-Nmap scan report for 127.24.7.100
-Host is up (0.00030s latency).
-Not shown: 996 closed tcp ports (reset)
-PORT     STATE SERVICE
-135/tcp  open  msrpc
-445/tcp  open  microsoft-ds
-3306/tcp open  mysql
-5432/tcp open  postgresql
+nmap -sV 192.168.1.1
 
-Host script results:
-|_smb-vuln-ms10-054: false
-|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
-|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+-sV: Performs version detection on services.
+This gives you detailed information about what’s running on each open port (e.g., Apache 2.4.29).
 
-Nmap done: 1 IP address (1 host up) scanned in 59.80 seconds
+Step 3: Vulnerability Scan
+Use Nmap's vulnerability scripts to detect common vulnerabilities.
 
-NOTES
-# samba-vuln-cve-2012-1182 -- Samba Might not be running on this system/
-    Unsupported version/blocked by firewall or nmap probes.
-# smb-vuln-ms10-061 -- 
+nmap --script vuln 192.168.1.1
+
+--script vuln: Runs a collection of scripts to check for known vulnerabilities, such as misconfigurations, outdated software, and weak authentication mechanisms.
+
+Step 4: Scan for Open UDP Ports
+UDP services can often be overlooked but may pose a security risk.
+
+nmap -sU 192.168.1.1
+
+-sU: Scans UDP ports. Common services like DNS (53), SNMP (161), and NTP (123) use UDP.
+
+Step 5: Check for Weak SSL/TLS Configurations
+Identify weak ciphers, outdated protocols, or self-signed certificates.
+
+nmap --script ssl-enum-ciphers -p 443 192.168.1.1
+
+This checks for SSL/TLS vulnerabilities on services like HTTPS (443) and other encrypted connections.
+
+Step 6: Detect Malware or Backdoor Ports
+Malware or attackers might use non-standard ports or known backdoor services.
+
+nmap -p 1024-65535 192.168.1.1
+
+Scans all high ports (above 1024) to look for unusual services that could indicate compromise.
